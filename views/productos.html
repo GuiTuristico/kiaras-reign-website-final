@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Premium | Kiaras Reign - Tienda Ecológica para Bebés</title>
+    <meta name="description" content="Descubre nuestra colección premium de productos ecológicos para bebés inspirados en El Rey León. Peluches orgánicos, ropa natural, alimentación segura y más.">
+    <meta name="keywords" content="productos bebés ecológicos, peluches orgánicos, ropa bebé natural, alimentación infantil, juguetes educativos, Rey León">
+    <meta name="author" content="Kiaras Reign Baby Shop">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Productos Premium | Kiaras Reign">
+    <meta property="og:description" content="Colección premium de productos ecológicos para bebés inspirados en El Rey León">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiarasreign.com/productos">
+    <meta property="og:image" content="https://kiarasreign.com/images/productos-og.jpg">
+    
+    <link rel="canonical" href="https://kiarasreign.com/productos">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+              <div class="logo">
+  <div class="logo-icon">
+    <img src="images/logo.png" alt="Kiaras Reign - El Reino de la Pequeña Kiara" class="logo-image">
+  </div>
+  <div class="logo-text">
+    <span class="tagline">El Reino de la Pequeña Kiara</span>
+  </div>
+</div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">🏠 Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link active">🛍️ Productos</a></li>
+                    <li><a href="presupuesto.html" class="nav-link">💰 Presupuesto</a></li>
+                    <li><a href="contacto.html" class="nav-link">📞 Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Hero de Productos -->
+        <section class="products-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="section-badge">🛍️ Colección Premium</div>
+                    <h1 class="hero-title">
+                        Tesoros del Reino de 
+                        <span class="text-gradient">Kiara</span>
+                    </h1>
+                    <p class="hero-description">
+                        Descubre nuestra cuidadosa selección de productos premium y ecológicos para bebés, 
+                        inspirados en los valores de El Rey León. Cada artículo ha sido elegido por su 
+                        compromiso con la calidad, la seguridad y la sostenibilidad.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">🌿</div>
+                            <div class="stat-text">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Ecológico</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">🛡️</div>
+                            <div class="stat-text">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Productos Seguros</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">👑</div>
+                            <div class="stat-text">
+                                <div class="stat-number">Premium</div>
+                                <div class="stat-label">Calidad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filtros de Categorías -->
+        <section class="categories-section">
+            <div class="container">
+                <div class="categories-header">
+                    <h2 class="section-title">Explora Nuestras Categorías</h2>
+                    <p class="section-description">
+                        Cada categoría está inspirada en los personajes y valores de El Rey León, 
+                        ofreciendo productos únicos para cada etapa del crecimiento de tu pequeño rey.
+                    </p>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card active" data-category="all">
+                        <div class="category-icon">🦁</div>
+                        <h2 class="category-title">Todos los Productos</h2>
+                        <p class="category-description">Explora toda nuestra colección premium</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo de Productos -->
+        <section class="catalog-section">
+            <div class="container">
+                <div class="catalog-header">
+                    <div class="catalog-info">
+                        <h3 class="catalog-title">Catálogo </h3>
+                        <p class="catalog-count">Mostrando <span id="product-count">18</span> productos</p>
+                    </div>
+                    <div class="catalog-controls">
+                        <select class="sort-select">
+                            <option value="featured">Destacados</option>
+                            <option value="price-low">Precio: Menor a Mayor</option>
+                            <option value="price-high">Precio: Mayor a Menor</option>
+                            <option value="name">Nombre A-Z</option>
+                            <option value="newest">Más Nuevos</option>
+                        </select>
+                    </div>
+                </div>
+                </div>
+                <div class="products-catalog" id="products-catalog">
+                    <!-- Peluches Orgánicos -->
+                    <div class="product-card" data-category="peluches">
+                        <div class="product-badge eco">🌿 Ecológico</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/simba.jpg" alt="Simba" class="simba-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Peluche Simba Orgánico</h3>
+                            <p class="product-description">
+                                Adorable peluche de Simba fabricado con algodón 100% orgánico y relleno 
+                                de fibras naturales. Perfecto para abrazar y acompañar los sueños.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Algodón orgánico certificado</span>
+                                <span class="feature">✓ Tintes naturales no tóxicos</span>
+                                <span class="feature">✓ Hipoalergénico</span>
+                                <span class="feature">✓ Lavable en máquina</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(127 reseñas)</span>
+                            </div>
+                            <div class="product-price">€34.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>                        
+                    <div class="product-card" data-category="peluches">
+                        <div class="product-badge premium">👑 Premium</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/nala.jpg" alt="Nala" class="nala-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Peluche Nala Premium</h3>
+                            <p class="product-description">
+                                Elegante peluche de Nala con detalles bordados a mano y materiales 
+                                premium. Una compañera especial para los pequeños reyes.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Bordado artesanal</span>
+                                <span class="feature">✓ Materiales premium</span>
+                                <span class="feature">✓ Edición limitada</span>
+                                <span class="feature">✓ Certificado de autenticidad</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(89 reseñas)</span>
+                            </div>
+                            <div class="product-price">€49.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="product-card" data-category="peluches">
+                        <div class="product-badge eco">🌿 Ecológico</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/timón.jpg" alt="Timón" class="timón-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Peluche Timón Natural</h3>
+                            <p class="product-description">
+                                Divertido peluche de Timón fabricado con materiales reciclados y 
+                                fibras naturales. Ideal para juegos educativos y aventuras.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Materiales reciclados</span>
+                                <span class="feature">✓ Fibras naturales</span>
+                                <span class="feature">✓ Resistente y duradero</span>
+                                <span class="feature">✓ Fácil mantenimiento</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(156 reseñas)</span>
+                            </div>
+                            <div class="product-price">€29.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Ropa Ecológica -->
+                    <div class="product-card" data-category="ropa">
+                        <div class="product-badge eco">🌿 Ecológico</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/body.jpg" alt="Body" class="body-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Body Reino Orgánico</h3>
+                            <p class="product-description">
+                                Conjunto de bodies con estampados inspirados en la sabana africana, 
+                                fabricados con bambú orgánico ultra suave para la piel del bebé.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Bambú orgánico 100%</span>
+                                <span class="feature">✓ Antibacteriano natural</span>
+                                <span class="feature">✓ Termorregulador</span>
+                                <span class="feature">✓ Pack de 3 unidades</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(203 reseñas)</span>
+                            </div>
+                            <div class="product-price">€39.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="product-card" data-category="ropa">
+                        <div class="product-badge premium">👑 Premium</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/vestido.jpg" alt="Vestido" class="vestido-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Vestido Princesa Kiara</h3>
+                            <p class="product-description">
+                                Elegante vestido inspirado en la princesa Kiara, confeccionado con 
+                                algodón pima orgánico y detalles bordados a mano.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Algodón pima orgánico</span>
+                                <span class="feature">✓ Bordados artesanales</span>
+                                <span class="feature">✓ Diseño exclusivo</span>
+                                <span class="feature">✓ Tallas 0-24 meses</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(78 reseñas)</span>
+                            </div>
+                            <div class="product-price">€54.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+                    <!-- Alimentación Natural -->
+                    <div class="product-card" data-category="alimentacion">
+                        <div class="product-badge safe">🛡️ Seguro</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/biberón.jpg" alt="Biberón" class="biberón-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Biberón Reino Seguro</h3>
+                            <p class="product-description">
+                                Biberón de vidrio borosilicato con tetina de silicona médica, 
+                                libre de BPA y diseñado con motivos del Reino de Kiara.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Vidrio borosilicato</span>
+                                <span class="feature">✓ Libre de BPA y ftalatos</span>
+                                <span class="feature">✓ Tetina silicona médica</span>
+                                <span class="feature">✓ Sistema anti-cólicos</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(267 reseñas)</span>
+                            </div>
+                            <div class="product-price">€24.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+
+                      
+                    <!-- Descanso Seguro -->
+                    <div class="product-card" data-category="descanso">
+                        <div class="product-badge eco">🌿 Ecológico</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/sabana.jpg" alt="Sábanas" class="sabana-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sábanas Reino Orgánico</h3>
+                            <p class="product-description">
+                                Juego de sábanas de algodón orgánico certificado con estampados 
+                                suaves inspirados en la sabana africana.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Algodón orgánico GOTS</span>
+                                <span class="feature">✓ Tejido percal transpirable</span>
+                                <span class="feature">✓ Estampados no tóxicos</span>
+                                <span class="feature">✓ Juego completo 3 piezas</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(234 reseñas)</span>
+                            </div>
+                            <div class="product-price">€49.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="product-card" data-category="descanso">
+                        <div class="product-badge premium">👑 Premium</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/móvil.jpg" alt="Móvil" class="móvil-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Móvil Musical Reino de Kiara</h3>
+                            <p class="product-description">
+                                Móvil musical con personajes del Reino de Kiara, fabricado en 
+                                madera natural con melodías relajantes inspiradas en África.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Madera natural certificada</span>
+                                <span class="feature">✓ Melodías africanas suaves</span>
+                                <span class="feature">✓ Movimiento giratorio</span>
+                                <span class="feature">✓ Control remoto incluido</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(98 reseñas)</span>
+                            </div>
+                            <div class="product-price">€79.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Juguetes Educativos -->
+                    <div class="product-card" data-category="juguetes">
+                        <div class="product-badge eco">🌿 Ecológico</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/puzzle.jpg" alt="Puzzle Ecológico" class="puzzle-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Puzzle Reino Educativo</h3>
+                            <p class="product-description">
+                                Puzzle de madera natural con piezas grandes y seguras, diseñado 
+                                para desarrollar la motricidad fina y el reconocimiento de formas.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Madera de haya natural</span>
+                                <span class="feature">✓ Piezas grandes y seguras</span>
+                                <span class="feature">✓ Pinturas no tóxicas</span>
+                                <span class="feature">✓ Desarrollo cognitivo</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(145 reseñas)</span>
+                            </div>
+                            <div class="product-price">€29.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="product-card" data-category="juguetes">
+                        <div class="product-badge premium">👑 Premium</div>
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="image-content">
+                                <img src="images/piano.jpg" alt="Piano Ecológico" class="piano-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Piano Musical Kiara</h3>
+                            <p class="product-description">
+                                Piano infantil con sonidos de la naturaleza africana, fabricado 
+                                en madera sostenible con teclas de colores naturales.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">✓ Madera sostenible FSC</span>
+                                <span class="feature">✓ Sonidos naturales</span>
+                                <span class="feature">✓ Desarrollo musical</span>
+                                <span class="feature">✓ Volumen ajustable</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-text">(87 reseñas)</span>
+                            </div>
+                            <div class="product-price">€64.99</div>
+                            <button class="btn btn-product">🛒 Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="catalog-pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <span class="pagination-dots">...</span>
+                    <button class="pagination-btn">8</button>
+                    <button class="pagination-btn next">Siguiente →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Garantías -->
+        <section class="guarantees-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">🛡️ Nuestras Garantías</div>
+                    <h2 class="section-title">Compromiso con la Excelencia</h2>
+                    <p class="section-description">
+                        En Kiaras Reign, cada producto viene respaldado por nuestro compromiso 
+                        inquebrantable con la calidad, la seguridad y la satisfacción familiar.
+                    </p>
+                </div>
+                <div class="guarantees-grid">
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon">🌿</div>
+                        <h3 class="guarantee-title">100% Ecológico</h3>
+                        <p class="guarantee-description">
+                            Todos nuestros productos están fabricados con materiales naturales, 
+                            orgánicos y sostenibles, certificados por organismos internacionales.
+                        </p>
+                    </div>
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon">🛡️</div>
+                        <h3 class="guarantee-title">Máxima Seguridad</h3>
+                        <p class="guarantee-description">
+                            Cumplimos y superamos todos los estándares de seguridad infantil, 
+                            con pruebas rigurosas y certificaciones de calidad.
+                        </p>
+                    </div>
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon">💝</div>
+                        <h3 class="guarantee-title">Satisfacción Garantizada</h3>
+                        <p class="guarantee-description">
+                            Ofrecemos garantía de satisfacción de 30 días. Si no estás completamente 
+                            satisfecho, te devolvemos tu dinero.
+                        </p>
+                    </div>
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon">🚚</div>
+                        <h3 class="guarantee-title">Envío Gratuito</h3>
+                        <p class="guarantee-description">
+                            Envío gratuito en pedidos superiores a €50. Entrega rápida y segura 
+                            con embalaje ecológico y protegido.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><img src="images/logo.png" alt="Kiaras Reign" class="footer-logo-image"></div>
+                        <div class="logo-text">
+                            <span>El Reino de la Pequeña Kiara</span>
+                            
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Productos premium y ecológicos para bebés, inspirados en los valores 
+                        de El Rey León. Calidad, seguridad y sostenibilidad para los pequeños reyes.
+                    </p>
+                    <div class="footer-social">
+                         <a href="#" class="social-icon-link" aria-label="Facebook">
+                             <i class="fab fa-facebook-f"></i>
+                         </a>
+                         <a href="#" class="social-icon-link" aria-label="Instagram">
+                             <i class="fab fa-instagram"></i>
+                         </a>
+                         <a href="#" class="social-icon-link" aria-label="TikTok">
+                             <i class="fab fa-tiktok"></i>
+                         </a>
+                         <a href="#" class="social-icon-link" aria-label="YouTube">
+                             <i class="fab fa-youtube"></i>
+                         </a>
+                         <a href="#" class="social-icon-link" aria-label="Pinterest">
+                             <i class="fab fa-pinterest"></i>
+                         </a>
+</div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegación Rápida</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"> Inicio</a></li>
+                        <li><a href="productos.html"> Productos</a></li>
+                        <li><a href="presupuesto.html"> Presupuesto</a></li>
+                        <li><a href="contacto.html"> Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Categorías del Reino</h4>
+                    <ul class="footer-links">
+                        <li><a href="productos.html"> Peluches Orgánicos</a></li>
+                        <li><a href="productos.html"> Ropa Ecológica</a></li>
+                        <li><a href="productos.html"> Alimentación Natural</a></li>
+                        <li><a href="productos.html"> Descanso Seguro</a></li>
+                        <li><a href="productos.html"> Juguetes Educativos</a></li>
+                        <li><a href="productos.html"> Cuidado Personal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Información Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"> Política de Privacidad</a></li>
+                        <li><a href="#"> Términos y Condiciones</a></li>
+                        <li><a href="#"> Aviso Legal</a></li>
+                        <li><a href="#"> Política de Devoluciones</a></li>
+                        <li><a href="#"> Envíos y Entregas</a></li>
+                        <li><a href="#"> Compromiso Ecológico</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Kiaras Reign - El Reino de la Pequeña Kiara. Todos los derechos reservados.</p>
+                    <div class="footer-badges">
+                        <span class="badge">🌿 100% Ecológico</span>
+                        <span class="badge">🛡️ Productos Seguros</span>
+                        <span class="badge">👑 Calidad Premium</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sistema de filtrado de productos
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryCards = document.querySelectorAll('.category-card');
+            const productCards = document.querySelectorAll('.product-card');
+            const productCount = document.getElementById('product-count');
+            
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    
+                    // Actualizar categoría activa
+                    categoryCards.forEach(c => c.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filtrar productos
+                    let visibleCount = 0;
+                    productCards.forEach(product => {
+                        if (category === 'all' || product.dataset.category === category) {
+                            product.style.display = 'block';
+                            visibleCount++;
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    });
+                    
+                    // Actualizar contador
+                    productCount.textContent = visibleCount;
+                });
+            });
+            
+            // Sistema de ordenamiento
+            const sortSelect = document.querySelector('.sort-select');
+            sortSelect.addEventListener('change', function() {
+                const sortBy = this.value;
+                const catalog = document.getElementById('products-catalog');
+                const products = Array.from(productCards);
+                
+                products.sort((a, b) => {
+                    switch(sortBy) {
+                        case 'price-low':
+                            return parseFloat(a.querySelector('.product-price').textContent.replace('€', '')) - 
+                                   parseFloat(b.querySelector('.product-price').textContent.replace('€', ''));
+                        case 'price-high':
+                            return parseFloat(b.querySelector('.product-price').textContent.replace('€', '')) - 
+                                   parseFloat(a.querySelector('.product-price').textContent.replace('€', ''));
+                        case 'name':
+                            return a.querySelector('.product-title').textContent.localeCompare(
+                                   b.querySelector('.product-title').textContent);
+                        default:
+                            return 0;
+                    }
+                });
+                
+                // Reordenar elementos en el DOM
+                products.forEach(product => catalog.appendChild(product));
+            });
+        });
+
+        // Destacar página actual en navegación
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
