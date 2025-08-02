@@ -1162,7 +1162,7 @@ p {
 .checkbox-container {
     display: flex;
     align-items: flex-start;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-2x1);
     cursor: pointer;
     font-size: var(--text-sm);
     line-height: 1.5;
