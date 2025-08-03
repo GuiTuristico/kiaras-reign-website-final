@@ -1,13 +1,13 @@
-// Espera o conteúdo do DOM carregar completamente antes de executar qualquer script
+
 document.addEventListener('DOMContentLoaded', function() {
 
-    // --- LÓGICA GLOBAL (executa em todas as páginas) ---
+    // --- LÓGICA GLOBAL  ---
 
-    // 1. Destacar o link de navegação da página atual
+  
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        // Extrai o nome do arquivo do atributo href para comparar com a página atual
+       
         const linkPage = link.getAttribute('href').split('/').pop();
         if (linkPage === currentPage) {
             link.classList.add('active');
@@ -16,21 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // --- LÓGICA ESPECÍFICA DA PÁGINA DE INÍCIO (index.html) ---
+    // --- LÓGICA ESPECÍFICA homepage (index.html) ---
 
-    // 2. Animação de elementos flutuantes
+    // Animación de elementos flotantes
     const floatingItems = document.querySelectorAll('.floating-item');
-    if (floatingItems.length > 0) { // Executa apenas se encontrar os elementos
+    if (floatingItems.length > 0) { 
         floatingItems.forEach((item, index) => {
             item.style.animationDelay = `${index * 0.5}s`;
         });
     }
 
-    // --- LÓGICA ESPECÍFICA DA PÁGINA DE PRODUTOS (productos.html) ---
+    // --- LÓGICA ESPECÍFICA productos (productos.html) ---
 
-    // 3. Sistema de filtrado e ordenamento de produtos
+    // Sistema de filtrado 
     const productsCatalog = document.getElementById('products-catalog');
-    if (productsCatalog) { // Executa apenas se estiver na página de produtos
+    if (productsCatalog) { 
         const categoryCards = document.querySelectorAll('.category-card');
         const productCards = document.querySelectorAll('.product-card');
         const productCount = document.getElementById('product-count');
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Ordenamento de produtos
+        // Ordenación de productos
         sortSelect.addEventListener('change', function() {
             const sortBy = this.value;
             const products = Array.from(productCards);
@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- LÓGICA ESPECÍFICA DA PÁGINA DE ORÇAMENTO (presupuesto.html) ---
+    // --- LÓGICA ESPECÍFICA presupuesto (presupuesto.html) ---
 
-    // 4. Validação e envio do formulário de orçamento
+    // 4. Validación y envío del formulario de presupuesto
     const budgetForm = document.getElementById('budgetForm');
-    if (budgetForm) { // Executa apenas se estiver na página de orçamento
+    if (budgetForm) { 
         const submitBtn = document.getElementById('submit-btn');
         const btnText = submitBtn.querySelector('.btn-text');
         const btnLoading = submitBtn.querySelector('.btn-loading');
@@ -102,22 +102,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         function validateBudgetForm() {
-            // ... (aqui vai toda a sua lógica de validação para o formulário de orçamento)
-            // ... (não precisa mudar nada dentro desta função)
-            return true; // Simplificado para o exemplo
+            
+            return true; 
         }
 
         function submitBudgetForm() {
-            // ... (aqui vai toda a sua lógica de envio para o formulário de orçamento)
-            // ... (não precisa mudar nada dentro desta função)
+           
         }
     }
 
-    // --- LÓGICA ESPECÍFICA DA PÁGINA DE CONTATO (contacto.html) ---
+    // --- LÓGICA ESPECÍFICA contacto (contacto.html) ---
 
-    // 5. Validação e envio do formulário de contato
+    // 5.  Validación y envío del formulario de contacto
     const contactForm = document.getElementById('contactForm');
-    if (contactForm) { // Executa apenas se estiver na página de contato
+    if (contactForm) { 
         const submitBtn = document.getElementById('submit-btn');
         const btnText = submitBtn.querySelector('.btn-text');
         const btnLoading = submitBtn.querySelector('.btn-loading');
@@ -136,18 +134,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         function validateContactForm() {
-            // ... (aqui vai toda a sua lógica de validação para o formulário de contato)
-            // ... (não precisa mudar nada dentro desta função)
-            return true; // Simplificado para o exemplo
+            
+            return true; 
         }
 
         function submitContactForm() {
-            // ... (aqui vai toda a sua lógica de envio para o formulário de contato)
-            // ... (não precisa mudar nada dentro desta função)
+            
         }
     }
 
-    // Funções de ajuda para os formulários (se forem comuns a ambos)
+    // Funciones de ayuda para los formularios
     function showError(errorId, message) {
         const errorElement = document.getElementById(errorId);
         if (errorElement) {
