@@ -253,6 +253,7 @@ p {
     color: var(--text-white);
     font-size: var(--text-sm);
     padding: var(--spacing-sm) var(--spacing-md);
+    margin-top: var(--spacing-md);
 }
 
 .btn-product:hover {
@@ -759,14 +760,14 @@ p {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: var(--spacing-2xl);
-    margin-bottom: var(--spacing-2xl);
+    gap: var(--spacing-3xl);
+    margin-bottom: var(--spacing-3xl);
 }
 
 .product-card {
     background: var(--bg-primary);
     border-radius: var(--radius-xl);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-2g);
     box-shadow: var(--shadow-md);
     border: 1px solid var(--cream);
     transition: all var(--transition-normal);
@@ -1730,7 +1731,7 @@ p {
     }
     
     .products-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
     
     .form-row {
