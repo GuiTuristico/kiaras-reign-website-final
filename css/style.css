@@ -2230,3 +2230,14 @@ body {
     white-space: nowrap; 
     padding-bottom: var(--spacing-md); 
 }
+
+/* Layout de 3 columnas en products page */ 
+
+.catalog-section-section-grid {
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding-bottom: var(--spacing-md); 
+}
