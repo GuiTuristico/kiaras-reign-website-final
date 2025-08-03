@@ -166,7 +166,7 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    padding: 0 var(--spacing-1g);
 }
 
 .text-gradient {
@@ -253,7 +253,7 @@ p {
     color: var(--text-white);
     font-size: var(--text-sm);
     padding: var(--spacing-sm) var(--spacing-md);
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-1g);
 }
 
 .btn-product:hover {
@@ -276,6 +276,28 @@ p {
 }
 
 /* ===== HEADER Y NAVEGACIÓN ===== */
+
+/* Layout de 3 colunas para produtos na página inicial */
+.home-products-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    max-width: 1200px; /* Limita a largura para que não se estendam demais */
+    margin: 0 auto; /* Centraliza o grid */
+    overflow-x: auto; /* Permite rolagem horizontal se houver muitos itens */
+    white-space: nowrap; /* Mantém os itens na mesma linha */
+    padding-bottom: var(--spacing-md); /* Espaçamento para a barra de rolagem */
+}
+
+.home-products-grid .product-card {
+    flex-shrink: 0; /* Impede que os cards encolham */
+    width: calc(33.33% - var(--spacing-2xl) * 2 / 3); /* Ajusta a largura para 3 colunas com gap */
+    margin-right: var(--spacing-2xl); /* Espaçamento entre os cards */
+}
+
+.home-products-grid .product-card:last-child {
+    margin-right: 0;
+}
+
+
 .main-header {
     background: linear-gradient(135deg, var(--brown-savana), #3D2200);
     backdrop-filter: blur(10px);
@@ -1163,7 +1185,7 @@ p {
 .checkbox-container {
     display: flex;
     align-items: flex-start;
-    gap: var(--spacing-2x1);
+    gap: var(--spacing-3x1);
     cursor: pointer;
     font-size: var(--text-sm);
     line-height: 1.5;
@@ -1207,6 +1229,12 @@ p {
 .checkbox-text .link {
     color: var(--golden-kiara);
     text-decoration: underline;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: var(--spacing-lg); 
 }
 
 .form-submit {
@@ -1730,8 +1758,8 @@ p {
         text-align: center;
     }
     
-    .products-grid {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    .products-grid (min-width: 1024px) {
+        grid-template-columns: repeat(3, minmax(350px, 1fr));
     }
     
     .form-row {
@@ -2152,6 +2180,7 @@ p {
 
 .form-section h3, .form-section h4 {
     color: var(--brown-savana) !important;
+    padding: var(--spacing-3xl) 0;
 }
 
 .feature-text, .benefit-text {
