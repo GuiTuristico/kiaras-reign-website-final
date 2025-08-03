@@ -91,7 +91,7 @@ body {
 
     
 }
-/* Títulos principales con colores cálidos */
+/* Títulos principales  */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 600;
@@ -115,12 +115,12 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--brown-savana) !important;
 } 
 
-/* Texto del cuerpo más cálido */
+
 p, .form-description, .section-description {
     color: var(--text-secondary) !important;
 }
 
-/* Asegurar que el texto no sea negro */
+
 body {
     color: var(--brown-savana);
 }
@@ -1019,7 +1019,7 @@ p {
 
 .map-iframe {
   width: 100%;
-  height: 280px !important; /* Dejar espacio para el botón */
+  height: 280px !important; 
   border: none;
   border-radius: var(--radius-md);
 }
@@ -2221,51 +2221,12 @@ body {
     .booking-card { grid-row: 4; }
 }
 
-/* Layout de 3 colunas para produtos na página inicial */
+/* Layout de 3 columnas en home page */ 
 .products-section-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
-    max-width: 1200px; /* Limita a largura para que não se estendam demais */
-    margin: 0 auto; /* Centraliza o grid */
-    overflow-x: auto; /* Permite rolagem horizontal se houver muitos itens */
-    white-space: nowrap; /* Mantém os itens na mesma linha */
-    padding-bottom: var(--spacing-md); /* Espaçamento para a barra de rolagem */
-}
-
-.products-section-grid .product-card {
-    flex-shrink: 0; /* Impede que os cards encolham */
-    width: calc(33.33% - var(--spacing-2xl) * 2 / 3); /* Ajusta a largura para 3 colunas com gap */
-    margin-right: var(--spacing-2xl); /* Espaçamento entre os cards */
-}
-
-.home-products-grid .product-card:last-child {
-    margin-right: 0;
-}
-
-/* Estilo para exibir 3 produtos em linha na página inicial com rolagem horizontal */
-.products-section-display {
-    display: flex; /* Usamos flexbox para manter os itens na mesma linha */
-    overflow-x: auto; /* Permite rolagem horizontal se houver mais de 3 itens */
-    -webkit-overflow-scrolling: touch; /* Melhor rolagem em dispositivos iOS */
-    scroll-snap-type: x mandatory; /* Ajuda a "encaixar" os itens ao rolar */
-    padding-bottom: var(--spacing-md); /* Espaço para a barra de rolagem */
-    margin-bottom: var(--spacing-xl); /* Espaço abaixo da seção */
-}
-
-.products-section-display .product-card {
-    flex: 0 0 calc(33.33% - var(--spacing-lg)); /* 3 colunas, ajustando para o gap */
-    margin-right: var(--spacing-lg); /* Espaçamento entre os cards */
-    scroll-snap-align: start; /* Ajuda a alinhar os cards ao rolar */
-}
-
-.products-section-display .product-card:last-child {
-    margin-right: 0; /* Remove a margem do último card */
-}
-
-/* Opcional: Esconder a barra de rolagem padrão em alguns navegadores */
-.products-section-display::-webkit-scrollbar {
-    display: none;
-}
-.products-section-display {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding-bottom: var(--spacing-md); 
 }
